@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+    <title>Formulário de Contato JSF</title>
+    <h:outputStylesheet library="css" name="main.css" />
+</h:head>
+
+<h:body>
+    <h1>Fale Conosco</h1>
+    
+    <h:form id="contatoForm">
+        
+        <p>
+            <h:outputLabel value="Nome:" for="nome" />
+            <br/>
+            <h:inputText id="nome" value="#{contatoBean.nome}" styleClass="input-field" required="true" />
+        </p>
+
+        <p>
+            <h:outputLabel value="Sobrenome:" for="sobrenome" />
+            <br/>
+            <h:inputText id="sobrenome" value="#{contatoBean.sobrenome}" styleClass="input-field" required="true" />
+        </p>
+        
+        <p>
+            <h:outputLabel value="E-mail:" for="email" />
+            <br/>
+            <h:inputText id="email" value="#{contatoBean.email}" styleClass="input-field" required="true" />
+        </p>
+        
+        <p>
+            <h:outputLabel value="Telefone/Fone:" for="fone" />
+            <br/>
+            <h:inputText id="fone" value="#{contatoBean.fone}" styleClass="input-field" />
+        </p>
+
+        <p>
+            <h:outputLabel value="Mensagem:" for="mensagem" />
+            <br/>
+            <h:inputTextarea id="mensagem" rows="5" cols="40" styleClass="input-field-area" />
+        </p>
+        
+        <p>
+            <h:commandButton value="Enviar Contato" action="confirma" styleClass="submit-button" />
+        </p>
+    </h:form>
+    
+</h:body>
+</html>

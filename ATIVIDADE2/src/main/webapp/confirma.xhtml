@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+    <title>Confirmação de Envio</title>
+</h:head>
+
+<h:body>
+    <h1>Obrigado por seu Contato!</h1>
+    
+    <p>Prezado(a) <h:outputText value="#{contatoBean.nome}" />,</p>
+    
+    <p>Seu formulário foi recebido com sucesso. Seguem os dados que você nos enviou:</p>
+    
+    <ul>
+        <li>Nome Completo: <h:outputText value="#{contatoBean.nome} #{contatoBean.sobrenome}" /></li>
+        <li>E-mail: <h:outputText value="#{contatoBean.email}" /></li>
+        <li>Telefone: <h:outputText value="#{contatoBean.fone}" /></li>
+        <li>Mensagem: <h:outputText value="#{contatoBean.mensagem}" /></li>
+    </ul>
+
+    <p>Em breve, nossa equipe entrará em contato.</p>
+    
+    <p><h:outputLink value="formulario.xhtml">Voltar ao Formulário</h:outputLink></p>
+
+</h:body>
+</html>

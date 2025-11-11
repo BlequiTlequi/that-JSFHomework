@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+/* Estilo para todos os campos de texto (h:inputText) */
+.input-field {
+    width: 300px;
+    padding: 8px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Estilo específico para a área de texto (h:inputTextarea) */
+.input-field-area {
+    width: 300px;
+    padding: 8px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical; /* Permite redimensionar apenas verticalmente */
+}
+
+/* Estilo para o botão de envio (h:commandButton) */
+.submit-button {
+    background-color: #4CAF50; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+/* Estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
