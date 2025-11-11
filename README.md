@@ -1,2 +1,2 @@
 # that-JSFHomework
-Projeto de alicação Java usando Eclipse!
+Projeto de aplicação Java usando Eclipse!
